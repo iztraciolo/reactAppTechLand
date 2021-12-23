@@ -94,7 +94,7 @@ useEffect(()=>{ //load more btn
                     <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                         <thead>
                             <tr>
-                                <th>Nombre del producto</th>
+                                <th>Producto</th>
                                 <th>Imagen</th>
                                 <th>Descripción</th>
                                 <th>Marca</th>
@@ -104,7 +104,7 @@ useEffect(()=>{ //load more btn
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Nombre del producto</th>
+                                <th>Producto</th>
                                 <th>Imagen</th>
                                 <th>Descripción</th>
                                 <th>Marca</th>
