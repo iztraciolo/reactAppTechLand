@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
-function ChartRow(props){
+function ChartRowProduct(props){
     return (
                 <tr>
-                    <td>{props.name_product}</td>
+                    <td>
+                        <Link to={props.detail}>{props.name_product}</Link>                        
+                    </td>
+
                     <td>
                         <img src={props.image_product} style={{width: 10 +'rem'}}  />                        
                     </td>
@@ -33,4 +37,4 @@ function ChartRow(props){
     
         
 
-export default ChartRow;
+export default ChartRowProduct;

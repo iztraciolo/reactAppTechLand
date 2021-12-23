@@ -7,6 +7,9 @@ import Stadistics from './Stadistics';
 import NotFound from './NotFound';
 import {Link, Route, Switch} from 'react-router-dom';
 import ProductList from './ProductList';
+import ProductDetail from './ProductDetail';
+import CustomerList from './CustomerList';
+import CustomerDetail from './CustomerDetail';
 
 
 function SideBar(){
@@ -16,11 +19,11 @@ function SideBar(){
             <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
-                <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+                <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={logoTechLand} alt="Digital House"/>
+                        <img className="w-100" src={logoTechLand} alt="Tech-Land"/>
                     </div>
-                </a>
+                </Link>
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider my-0"/>
@@ -67,6 +70,13 @@ function SideBar(){
                         <span>Lista de productos</span></Link>
                 </li>
 
+                {/*<!-- Nav Item - Tables -->*/}
+                <li className="nav-item nav-link">
+                <Link className="nav-link" to="/customerList">
+                        <i className="fas fa-fw fa-table"></i>
+                        <span>Lista de clientes</span></Link>
+                </li>
+
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
             </ul>
@@ -101,8 +111,14 @@ function SideBar(){
 
                 <Route exact path="/stadistics" component={Stadistics} />
 
-                <Route exact path="/productList" component={ProductList} />                    
+                <Route exact path="/productList" component={ProductList} />  
+
+                <Route exact path="/product/:id" component={ProductDetail} />                   
                 
+                <Route exact path="/customerList" component={CustomerList} />
+
+                <Route exact path="/customer/:id" component={CustomerDetail} />
+
                 <Route component={NotFound} />
             </Switch>
             {/*<!-- End Microdesafio 2 -->*/}

@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from 'react';
-import ChartRow from './ChartRow';
+import ChartRowProduct from './ChartRowProduct';
 
 
 function ProductList (){
@@ -129,7 +129,7 @@ useEffect(()=>{ //load more btn
                               products &&
 
                             products.map( ( product , i) => {
-                                return <ChartRow {...product} key={i}/>
+                                return <ChartRowProduct {...product} key={i}/>
                             })
                             }
 
