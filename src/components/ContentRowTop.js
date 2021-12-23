@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentRowCenter from './ContentRowCenter';
-import ContentRowMovies from './ContentRowMovies';
-import Chart from './Chart';
+import Stadistics from './Stadistics';
+import Chart from './ProductList';
 
 function ContentRowTop(){
     return(
@@ -13,7 +13,7 @@ function ContentRowTop(){
 					</div>
 				
 					{/*<!-- Content Row Movies-->*/}
-					<ContentRowMovies />
+					<Stadistics />
 					<ContentRowCenter />
 					<Chart />
 	

@@ -1,11 +1,13 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import logoTechLand from '../assets/images/techLand2Black.png';
 import ContentWrapper from './ContentWrapper';
 import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import LastProduct from './LastProduct';
+import Stadistics from './Stadistics';
 import NotFound from './NotFound';
 import {Link, Route, Switch} from 'react-router-dom';
+import ProductList from './ProductList';
+
 
 function SideBar(){
     return(
@@ -16,7 +18,7 @@ function SideBar(){
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                        <img className="w-100" src={logoTechLand} alt="Digital House"/>
                     </div>
                 </a>
 
@@ -27,7 +29,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></Link>
+                        <span>Dashboard - Tech_Land</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -46,16 +48,23 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/LastMovieInDb">
+                    <Link className="nav-link" to="/lastProduct">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></Link>
+                        <span>Último producto</span></Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/ContentRowMovies">
+                <Link className="nav-link" to="/stadistics">
+                        <i className="fas fa-fw fa-chart-area"></i>
+                        <span>Estadísticas</span></Link>
+                </li>
+
+                {/*<!-- Nav Item - Tables -->*/}
+                <li className="nav-item nav-link">
+                <Link className="nav-link" to="/productList">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></Link>
+                        <span>Lista de productos</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -86,12 +95,14 @@ function SideBar(){
                 <Route path="/GenresInDb">
                     <GenresInDb />
                 </Route>
-                <Route path="/LastMovieInDb">
-                    <LastMovieInDb />
+                <Route path="/lastProduct">
+                    <LastProduct />
                 </Route>
-                <Route path="/ContentRowMovies">
-                    <ContentRowMovies />
-                </Route>
+
+                <Route exact path="/stadistics" component={Stadistics} />
+
+                <Route exact path="/productList" component={ProductList} />                    
+                
                 <Route component={NotFound} />
             </Switch>
             {/*<!-- End Microdesafio 2 -->*/}
