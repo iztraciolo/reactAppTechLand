@@ -1,5 +1,5 @@
-import imagenFondo from '../assets/images/mandalorian.jpg';
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function LastProduct(){
 
@@ -25,6 +25,7 @@ function LastProduct(){
     
 
 
+    const newLocal = `/product/${lastProduct.product_id}`;
     return(
         <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">
@@ -35,8 +36,12 @@ function LastProduct(){
                     <div className="text-center">
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={lastProduct.image_product} alt=" Imagen del producto "/>
                     </div>
-                    <p>{lastProduct.description}</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
+                    
+                    <Link to={`/product/${lastProduct.product_id}`}>
+                        <p>{lastProduct.name_product}</p>
+                    </Link>
+                    
+                    
                 </div>
             </div>
         </div>

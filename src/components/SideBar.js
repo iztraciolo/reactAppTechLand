@@ -113,7 +113,7 @@ function SideBar(){
 
                 <Route exact path="/productList" component={ProductList} />  
 
-                <Route exact path="/product/:id" component={ProductDetail} />                   
+                <Route exact path="/product/:id" component={ProductDetail} />                                   
                 
                 <Route exact path="/customerList" component={CustomerList} />
 
