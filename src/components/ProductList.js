@@ -119,7 +119,7 @@ useEffect(()=>{ //load more btn
                                 <>
                                     <tr>
                                         <td >
-                                            Ya no hay más artículos
+                                            No disponible
                                         </td>
                                     </tr>
                                 </>

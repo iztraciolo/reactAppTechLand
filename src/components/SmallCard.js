@@ -12,8 +12,8 @@ function SmallCard(props){
                             {
                                 props.cuantity   &&
                                 <div className="h5 mb-0 font-weight-bold text-gray-800">{props.cuantity}</div>
+                                
                             }
-
                             {
                                 !props.cuantity &&
                                 <div className="h5 mb-0 font-weight-bold text-gray-800">Cargando</div>

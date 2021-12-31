@@ -1,7 +1,7 @@
 import React from 'react';
 import logoTechLand from '../assets/images/techLand2Black.png';
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
+import CategoriesList from './CategoriesList';
 import LastProduct from './LastProduct';
 import Stadistics from './Stadistics';
 import NotFound from './NotFound';
@@ -43,9 +43,9 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                <Link className="nav-link" to="/categories">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <span>Categorías</span>
                     </Link>
                 </li>
 
@@ -102,8 +102,8 @@ function SideBar(){
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/GenresInDb">
-                    <GenresInDb />
+                <Route path="/categories">
+                    <CategoriesList />
                 </Route>
                 <Route path="/lastProduct">
                     <LastProduct />

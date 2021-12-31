@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import ProductDetail from './ProductDetail';
 
 function LastProduct(){
 
@@ -40,6 +41,8 @@ function LastProduct(){
                     <Link to={`/product/${lastProduct.product_id}`}>
                         <p>{lastProduct.name_product}</p>
                     </Link>
+
+                    <Route exact path="/product/:id" component={ProductDetail} />
                     
                     
                 </div>
