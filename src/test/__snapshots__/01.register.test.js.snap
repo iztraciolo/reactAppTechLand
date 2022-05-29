@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de renderizado Debe renderizar correctamente <CreateProduct/> 1`] = `
+<Fragment>
+  <div
+    className="d-flex flex-column"
+    id="content-wrapper"
+  >
+    <div
+      id="content"
+    >
+      <TopBar />
+      <div
+        className="badge-dark mt-5 container-fluid w-50 mx-auto p-4 rounded"
+      >
+        <h3
+          className="text-center mx-auto alert-secondary rounded p-2 mb-2 w-50"
+        >
+          Añadir producto
+        </h3>
+        <br />
+        <form
+          className="mb-3"
+        >
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Nombre del producto 
+            </label>
+            <input
+              className="input-group"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Descripción
+            </label>
+            <textarea
+              className="input-group"
+              onChange={[Function]}
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Imagen 
+            </label>
+            <input
+              className="input-group"
+              type="file"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Categoría 
+            </label>
+            <select
+              className="input-group"
+              id="category"
+              onChange={[Function]}
+            >
+              <option
+                key="0Perifericos"
+                value="Perifericos"
+              >
+                Perifericos
+              </option>
+              <option
+                key="1Equipos de computo"
+                value="Equipos de computo"
+              >
+                Equipos de computo
+              </option>
+              <option
+                key="2Laptops"
+                value="Laptops"
+              >
+                Laptops
+              </option>
+              <option
+                key="3Monitores"
+                value="Monitores"
+              >
+                Monitores
+              </option>
+              <option
+                key="4Procesadores"
+                value="Procesadores"
+              >
+                Procesadores
+              </option>
+              <option
+                key="5Tarjetas Madre"
+                value="Tarjetas Madre"
+              >
+                Tarjetas Madre
+              </option>
+              <option
+                key="6Tarjetas de video"
+                value="Tarjetas de video"
+              >
+                Tarjetas de video
+              </option>
+              <option
+                key="7 Disipadores y Enfriamiento"
+                value=" Disipadores y Enfriamiento"
+              >
+                 Disipadores y Enfriamiento
+              </option>
+              <option
+                key="8PC Gamer"
+                value="PC Gamer"
+              >
+                PC Gamer
+              </option>
+              <option
+                key="9Almacenamiento"
+                value="Almacenamiento"
+              >
+                Almacenamiento
+              </option>
+              <option
+                key="10Memorias"
+                value="Memorias"
+              >
+                Memorias
+              </option>
+              <option
+                key="11Otra"
+                value="Otra"
+              >
+                Otra
+              </option>
+            </select>
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Marca 
+            </label>
+            <select
+              className="input-group"
+              id="brand"
+              onChange={[Function]}
+            >
+              <option
+                key="0Acer"
+                value="Acer"
+              >
+                Acer
+              </option>
+              <option
+                key="1Adata"
+                value="Adata"
+              >
+                Adata
+              </option>
+              <option
+                key="2AlienWare"
+                value="AlienWare"
+              >
+                AlienWare
+              </option>
+              <option
+                key="3AMD"
+                value="AMD"
+              >
+                AMD
+              </option>
+              <option
+                key="4Aorus"
+                value="Aorus"
+              >
+                Aorus
+              </option>
+              <option
+                key="5Apple"
+                value="Apple"
+              >
+                Apple
+              </option>
+              <option
+                key="6Asus"
+                value="Asus"
+              >
+                Asus
+              </option>
+              <option
+                key="7Dell"
+                value="Dell"
+              >
+                Dell
+              </option>
+              <option
+                key="8EVGA"
+                value="EVGA"
+              >
+                EVGA
+              </option>
+              <option
+                key="9Gigabyte"
+                value="Gigabyte"
+              >
+                Gigabyte
+              </option>
+              <option
+                key="10HP"
+                value="HP"
+              >
+                HP
+              </option>
+              <option
+                key="11Huawei"
+                value="Huawei"
+              >
+                Huawei
+              </option>
+              <option
+                key="12HyperX"
+                value="HyperX"
+              >
+                HyperX
+              </option>
+              <option
+                key="13Intel"
+                value="Intel"
+              >
+                Intel
+              </option>
+              <option
+                key="14Kingston"
+                value="Kingston"
+              >
+                Kingston
+              </option>
+              <option
+                key="15Lenovo"
+                value="Lenovo"
+              >
+                Lenovo
+              </option>
+              <option
+                key="16MSI"
+                value="MSI"
+              >
+                MSI
+              </option>
+              <option
+                key="17Nvidia"
+                value="Nvidia"
+              >
+                Nvidia
+              </option>
+              <option
+                key="18Samsung"
+                value="Samsung"
+              >
+                Samsung
+              </option>
+              <option
+                key="19Sony"
+                value="Sony"
+              >
+                Sony
+              </option>
+              <option
+                key="20Otro"
+                value="Otro"
+              >
+                Otro
+              </option>
+            </select>
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Precio 
+            </label>
+            <input
+              className="input-group"
+              onChange={[Function]}
+              type="number"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Stock 
+            </label>
+            <input
+              className="input-group"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-check-label"
+            >
+              Tipo 
+            </label>
+            <select
+              className="input-group"
+              id="type"
+              onChange={[Function]}
+            >
+              <option
+                key="0Destacados"
+                value="Destacados"
+              >
+                Destacados
+              </option>
+              <option
+                key="1Agregados recientemente"
+                value="Agregados recientemente"
+              >
+                Agregados recientemente
+              </option>
+              <option
+                key="2Más vendidos"
+                value="Más vendidos"
+              >
+                Más vendidos
+              </option>
+              <option
+                key="3En oferta"
+                value="En oferta"
+              >
+                En oferta
+              </option>
+            </select>
+          </div>
+          <div
+            className="form-group"
+          >
+            <button
+              className="btn-light w-50 d-block mx-auto rounded"
+              onClick={[Function]}
+              type="submit"
+            >
+               Agregar
+            </button>
+          </div>
+        </form>
+      </div>
+      <Footer />
+    </div>
+  </div>
+</Fragment>
+`;

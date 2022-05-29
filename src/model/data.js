@@ -1,0 +1,42 @@
+export const categories = ["Perifericos",
+    "Equipos de computo",
+    "Laptops",
+    "Monitores",
+    "Procesadores",
+    "Tarjetas Madre",
+    "Tarjetas de video",
+    " Disipadores y Enfriamiento",
+    "PC Gamer",
+    "Almacenamiento",
+    "Memorias",
+    "Otra"];
+export const types=[
+    "Destacados",
+    "Agregados recientemente",
+    "Más vendidos",
+    "En oferta",
+];
+
+export const brands =[
+    "Acer",
+    "Adata",
+    "AlienWare",
+    "AMD",
+    "Aorus",
+    "Apple",
+    "Asus",
+    "Dell",
+    "EVGA",
+    "Gigabyte",
+    "HP",
+    "Huawei",
+    "HyperX",
+    "Intel",
+    "Kingston",
+    "Lenovo",
+    "MSI",
+    "Nvidia",
+    "Samsung",
+    "Sony",
+    "Otro"
+];

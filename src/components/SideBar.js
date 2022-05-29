@@ -1,5 +1,5 @@
 import React from 'react';
-import logoTechLand from '../assets/images/techLand2Black.png';
+import logoTechLand from '../assets/images/techLand1White.png';
 import ContentWrapper from './ContentWrapper';
 import CategoriesList from './CategoriesList';
 import LastProduct from './LastProduct';
@@ -10,18 +10,19 @@ import ProductList from './ProductList';
 import ProductDetail from './ProductDetail';
 import CustomerList from './CustomerList';
 import CustomerDetail from './CustomerDetail';
+import {CreateProduct} from "./CreateProduct";
 
 
 function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav bg-dark dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={logoTechLand} alt="Tech-Land"/>
+                        <img className="w-75" src={logoTechLand} alt="Tech-Land"/>
                     </div>
                 </Link>
 
@@ -76,6 +77,13 @@ function SideBar(){
                         <i className="fas fa-fw fa-table"></i>
                         <span>Lista de clientes</span></Link>
                 </li>
+    
+                {/*<!-- Nav Item - Tables -->*/}
+                <li className="nav-item nav-link">
+                    <Link className="nav-link" to="/create-product">
+                        <i className="fas fa-fw fa-plus"></i>
+                        <span>Añadir producto</span></Link>
+                </li>
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
@@ -111,8 +119,10 @@ function SideBar(){
 
                 <Route exact path="/stadistics" component={Stadistics} />
 
-                <Route exact path="/productList" component={ProductList} />  
-
+                <Route exact path="/productList" component={ProductList} />
+                
+                <Route exact path="/create-product" component={CreateProduct} />
+    
                 <Route exact path="/product/:id" component={ProductDetail} />                                   
                 
                 <Route exact path="/customerList" component={CustomerList} />
